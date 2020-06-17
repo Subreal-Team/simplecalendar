@@ -1,0 +1,5 @@
+__history/
+Win32/
+*.local
+Project1_Icon1.ico
+*.res
