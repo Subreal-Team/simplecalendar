@@ -14,6 +14,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object MonthCalendar: TMonthCalendar
@@ -23,9 +24,7 @@ object Form1: TForm1
     Height = 174
     Align = alClient
     AutoSize = True
-    MultiSelect = True
     Date = 42858.000000000000000000
-    EndDate = 42858.000000000000000000
     TabOrder = 0
     WeekNumbers = True
   end
