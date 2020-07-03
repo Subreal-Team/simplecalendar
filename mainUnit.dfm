@@ -1,4 +1,4 @@
-object Form1: TForm1
+object frmMainSC: TfrmMainSC
   Left = 0
   Top = 0
   Caption = 'SubReal.SimpleCalendar'
@@ -28,26 +28,35 @@ object Form1: TForm1
     Date = 42858.000000000000000000
     TabOrder = 0
     WeekNumbers = True
-    ExplicitWidth = 404
-    ExplicitHeight = 174
   end
   object ActionList1: TActionList
-    Left = 168
-    Top = 64
+    Left = 432
+    Top = 24
     object FileExit: TFileExit
       Category = 'File'
       Caption = 'E&xit'
       Hint = 'Exit|Quits the application'
       ImageIndex = 43
     end
+    object actShowOnTop: TAction
+      Category = 'View'
+      Caption = 'ShowOnTop'
+      OnExecute = actShowOnTopExecute
+    end
   end
   object MainMenu1: TMainMenu
-    Left = 80
-    Top = 32
-    object menuFile: TMenuItem
+    Left = 432
+    Top = 80
+    object mnuFile: TMenuItem
       Caption = '&File'
       object Exit: TMenuItem
         Action = FileExit
+      end
+    end
+    object mnuView: TMenuItem
+      Caption = '&View'
+      object ShowOnTop1: TMenuItem
+        Action = actShowOnTop
       end
     end
   end

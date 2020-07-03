@@ -45,7 +45,7 @@
         <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
         <SanitizedProjectName>SubReal_SimpleCalendar</SanitizedProjectName>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
-        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=SubReal, Team;FileDescription=;FileVersion=1.0.0.2;InternalName=;LegalCopyright=(c) Rewalon;LegalTrademarks=;OriginalFilename=SubReal.SimpleCalendar;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
         <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
         <DCC_E>false</DCC_E>
@@ -53,6 +53,8 @@
         <DCC_S>false</DCC_S>
         <DCC_F>false</DCC_F>
         <DCC_K>false</DCC_K>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Build>2</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
@@ -60,10 +62,8 @@
         <Icon_MainIcon>Project1_Icon1.ico</Icon_MainIcon>
         <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <DCC_UsePackage>rtl;fmxase;vcl;CustomIPTransport;vclactnband;vcldsnap;IndyCore;IndySystem;vclx;bindcomp;tethering;svnui;appanalytics;dsnap;bindcompvcl;vclimg;vcltouch;VclSmp;vcldb;bindcompfmx;svn;vclie;bindengine;dbrtl;IndyProtocols;fmx;fmxdae;xmlrtl;fmxobj;vclwinx;inet;$(DCC_UsePackage)</DCC_UsePackage>
-        <VerInfo_Build>1</VerInfo_Build>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Keys>CompanyName=SubReal, Team;FileVersion=1.0.0.1;InternalName=;LegalCopyright=(c) Rewalon;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.embarcadero.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=SubReal, Team;FileVersion=1.0.0.1;InternalName=SubReal.SimpleCalendar;LegalCopyright=(c) Rewalon;LegalTrademarks=;OriginalFilename=SubReal.SimpleCalendar.exe;ProductVersion=1.0.0.0;Comments=;ProgramID=com.subreal-team.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
     </PropertyGroup>
@@ -79,9 +79,10 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <Icon_MainIcon>Project1_Icon.ico</Icon_MainIcon>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <DCC_RemoteDebug>false</DCC_RemoteDebug>
         <AppDPIAwarenessMode>PerMonitor</AppDPIAwarenessMode>
+        <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
+        <VerInfo_Keys>CompanyName=SubReal, Team;FileVersion=1.0.0.1;InternalName=SubReal.SimpleCalendar;LegalCopyright=(c) Rewalon;LegalTrademarks=;OriginalFilename=SubReal.SimpleCalendar.exe;ProductVersion=1.0.0.0;Comments=;ProgramID=com.subreal-team.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -90,11 +91,9 @@
         <DCC_DebugInformation>0</DCC_DebugInformation>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
-        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_AutoIncVersion>true</VerInfo_AutoIncVersion>
-        <VerInfo_Build>1</VerInfo_Build>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=SubReal, Team;FileVersion=1.0.0.1;InternalName=SubReal.SimpleCalendar;LegalCopyright=(c) Rewalon;LegalTrademarks=;OriginalFilename=;ProductVersion=1.0.0.0;Comments=;ProgramID=com.subreal-team.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=SubReal, Team;FileVersion=1.0.0.1;InternalName=SubReal.SimpleCalendar;LegalCopyright=(c) Rewalon;LegalTrademarks=;OriginalFilename=SubReal.SimpleCalendar.exe;ProductVersion=1.0.0.0;Comments=;ProgramID=com.subreal-team.$(MSBuildProjectName);FileDescription=$(MSBuildProjectName);ProductName=$(MSBuildProjectName)</VerInfo_Keys>
         <Icon_MainIcon>Project1_Icon1.ico</Icon_MainIcon>
         <AppEnableRuntimeThemes>true</AppEnableRuntimeThemes>
         <BT_BuildType>Debug</BT_BuildType>
@@ -105,7 +104,7 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="mainUnit.pas">
-            <Form>Form1</Form>
+            <Form>frmMainSC</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

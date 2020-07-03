@@ -9,14 +9,18 @@ uses
   Vcl.ActnMan, Vcl.ToolWin, Vcl.ActnCtrls, Vcl.ActnMenus, Vcl.StdActns;
 
 type
-  TForm1 = class(TForm)
+  TfrmMainSC = class(TForm)
     MonthCalendar: TMonthCalendar;
     ActionList1: TActionList;
     FileExit: TFileExit;
     MainMenu1: TMainMenu;
-    menuFile: TMenuItem;
+    mnuFile: TMenuItem;
     Exit: TMenuItem;
+    actShowOnTop: TAction;
+    mnuView: TMenuItem;
+    ShowOnTop1: TMenuItem;
     procedure FormCreate(Sender: TObject);
+    procedure actShowOnTopExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -24,13 +28,24 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmMainSC: TfrmMainSC;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm1.FormCreate(Sender: TObject);
+procedure TfrmMainSC.actShowOnTopExecute(Sender: TObject);
+begin
+  mnuView.Checked := not mnuView.Checked;
+  if mnuView.Checked then
+    frmMainSC.FormStyle := fsStayOnTop
+  else
+    frmMainSC.FormStyle := fsNormal;
+
+   frmMainSC.Repaint;
+end;
+
+procedure TfrmMainSC.FormCreate(Sender: TObject);
 begin
   MonthCalendar.Date := Now;
 end;
