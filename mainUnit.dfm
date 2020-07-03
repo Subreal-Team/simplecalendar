@@ -2,12 +2,14 @@ object frmMainSC: TfrmMainSC
   Left = 0
   Top = 0
   Caption = 'SubReal.SimpleCalendar'
-  ClientHeight = 218
-  ClientWidth = 477
+  ClientHeight = 223
+  ClientWidth = 306
   Color = clWindow
   Constraints.MaxHeight = 700
   Constraints.MaxWidth = 700
   Ctl3D = False
+  UseDockManager = True
+  DoubleBuffered = True
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -21,13 +23,15 @@ object frmMainSC: TfrmMainSC
   object MonthCalendar: TMonthCalendar
     Left = 0
     Top = 0
-    Width = 477
-    Height = 218
+    Width = 306
+    Height = 223
     Align = alClient
     AutoSize = True
     Date = 42858.000000000000000000
     TabOrder = 0
     WeekNumbers = True
+    ExplicitWidth = 477
+    ExplicitHeight = 218
   end
   object ActionList1: TActionList
     Left = 432
