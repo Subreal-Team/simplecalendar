@@ -19,8 +19,11 @@ type
     actShowOnTop: TAction;
     mnuView: TMenuItem;
     ShowOnTop1: TMenuItem;
+    actShowNumbersWeek: TAction;
+    Shownumbersweek1: TMenuItem;
     procedure FormCreate(Sender: TObject);
     procedure actShowOnTopExecute(Sender: TObject);
+    procedure actShowNumbersWeekExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -34,15 +37,17 @@ implementation
 
 {$R *.dfm}
 
+procedure TfrmMainSC.actShowNumbersWeekExecute(Sender: TObject);
+begin
+  MonthCalendar.WeekNumbers :=   actShowNumbersWeek.Checked;
+end;
+
 procedure TfrmMainSC.actShowOnTopExecute(Sender: TObject);
 begin
-  mnuView.Checked := not mnuView.Checked;
-  if mnuView.Checked then
+  if actShowOnTop.Checked then
     frmMainSC.FormStyle := fsStayOnTop
   else
     frmMainSC.FormStyle := fsNormal;
-
-   frmMainSC.Repaint;
 end;
 
 procedure TfrmMainSC.FormCreate(Sender: TObject);

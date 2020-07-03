@@ -40,8 +40,16 @@ object frmMainSC: TfrmMainSC
     end
     object actShowOnTop: TAction
       Category = 'View'
+      AutoCheck = True
       Caption = 'ShowOnTop'
       OnExecute = actShowOnTopExecute
+    end
+    object actShowNumbersWeek: TAction
+      Category = 'View'
+      AutoCheck = True
+      Caption = 'Show numbers week'
+      Checked = True
+      OnExecute = actShowNumbersWeekExecute
     end
   end
   object MainMenu1: TMainMenu
@@ -57,6 +65,11 @@ object frmMainSC: TfrmMainSC
       Caption = '&View'
       object ShowOnTop1: TMenuItem
         Action = actShowOnTop
+        AutoCheck = True
+      end
+      object Shownumbersweek1: TMenuItem
+        Action = actShowNumbersWeek
+        AutoCheck = True
       end
     end
   end
